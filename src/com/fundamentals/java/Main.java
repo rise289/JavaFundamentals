@@ -1,5 +1,6 @@
 package com.fundamentals.java;
 
+
 /*
 This class is the starting class of this project.
         This is an example of a multi-line comment.
@@ -7,10 +8,31 @@ This class is the starting class of this project.
 public class Main {
 
     public static void main(String[] args) {
-        Lesson5Examples();
+        moreLesson6();
+        //Lesson6Examples();
+         //Lesson5Examples();
         //houseExample();
 
     }
+
+    public static void moreLesson6(){
+        Lesson6 myOtherLesson6 = new Lesson6();
+        myOtherLesson6.exampleBuilder("shrimp",2);
+        myOtherLesson6.exampleChar();
+        myOtherLesson6.exampleEscape();
+    }
+
+    public static void Lesson6Examples(){
+        Lesson6 myLesson6 = new Lesson6();
+        myLesson6.exampleCharAt();
+        myLesson6.exampleConcat(" has awesome donuts");
+        myLesson6.exampleEquals("LaMars");
+        String myLower = myLesson6.exampleLowerCase();
+        System.out.println(myLower);
+        String myUpper = myLesson6.exampleUpperCase();
+        System.out.println(myUpper);
+        myLesson6.exampleLength();
+ }
 
     public static void Lesson5Examples(){
         Lesson5 myLesson5 = new Lesson5();

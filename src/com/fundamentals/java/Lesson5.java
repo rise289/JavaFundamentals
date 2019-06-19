@@ -54,6 +54,7 @@ public class Lesson5 {
         System.out.println(able);
     }
 
+
     // This method has two parameters separated by a comma
     public void showLocalWithParameter(int able, int vals) {
         int total = able + vals;
