@@ -1,6 +1,5 @@
 package com.fundamentals.java;
 
-
 /*
 This class is the starting class of this project.
         This is an example of a multi-line comment.
@@ -8,12 +7,45 @@ This class is the starting class of this project.
 public class Main {
 
     public static void main(String[] args) {
-        moreLesson6();
+        Lesson7Examples();
+        //moreLesson6();
         //Lesson6Examples();
-         //Lesson5Examples();
+        //Lesson5Examples();
         //houseExample();
-
     }
+
+    public static void Lesson7Examples() {
+        Lesson7 myLesson7 = new Lesson7();
+      //  myLesson7.basicMath();
+      //  myLesson7.exampleModulus();
+      //  myLesson7.addTwoNumbers();
+      //  myLesson7.exampleAssignment1();
+      //  myLesson7.exampleAssignment2();
+      //  myLesson7.exampleRelational();
+      //  myLesson7.exampleIncrement();
+        myLesson7.exampleDecrement();
+    }
+
+
+        //Initializing a variable
+        //long z = 100000000;
+       // long y = -45000000;
+
+        //Displaying the variable
+       // System.out.println("The value of z is " + z);
+        //System.out.println("The value of y is " + y);
+   // }
+
+    //{
+        // Initializing a variable
+    //public static void GreenBookExamples(){
+       // float x = 10.11F;
+       // float w = -45.44F;
+
+        //Displaying the variable
+       // System.out.println("The value of x is " + x);
+       // System.out.println("The value of w is " + w);
+   // }
 
     public static void moreLesson6(){
         Lesson6 myOtherLesson6 = new Lesson6();
@@ -50,4 +82,5 @@ public class Main {
         House myHouse = new House();
         myHouse.doorOpenClose();
     }
+
 }
