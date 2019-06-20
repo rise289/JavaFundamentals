@@ -27,7 +27,7 @@ public class Lesson7 {
         int modulusTotal = value1 % value2;
         System.out.println(modulusTotal);
     }
-    //The contents
+    //The content of this method reflect importing the java scanner utility.
     public void addTwoNumbers(){
         int x, y, z;
         System.out.println("Enter two integers to calculate their sum.");
@@ -37,7 +37,7 @@ public class Lesson7 {
         z = x + y;
         System.out.println("The Sum of entered values = "+z);
     }
-
+    //The contents show Assignment operators
     public void exampleAssignment1() {
         int able = 10, may = 15;
         able += may;
@@ -65,7 +65,7 @@ public class Lesson7 {
         System.out.println(charlie);
 
     }
-
+    // The contents show the Relational Operator
     public void exampleRelational(){
         int echo =25, foxtrot = 30, golf = 25;
         boolean isSample1 = echo == foxtrot;
@@ -81,7 +81,7 @@ public class Lesson7 {
         boolean isFamiliar2 = foxtrot <= echo;
         System.out.println(isFamiliar2);
     }
-
+    // The Increment Operator is demonstrated here
     public void exampleIncrement(){
         int home = 10, jump, car;
         jump = home++;
@@ -90,7 +90,7 @@ public class Lesson7 {
         car = ++home;
         System.out.println(car);
     }
-
+    // The Decrement Operator is demonstrated here
     public void exampleDecrement() {
         int toy = 10, joe, jerry;
         joe = toy--;
