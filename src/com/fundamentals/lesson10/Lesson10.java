@@ -13,7 +13,7 @@ public class Lesson10 {
 
     protected void showProtected (){
         System.out.println("Show protected lesson");
-    }  // end method
+    } // end method
 
 
 

@@ -6,10 +6,12 @@ This class is the starting class of this project.
         */
 public class Main {
 
-
     public static void main(String[] args) {
-        Lesson10Example();
+        TruckLab();
+        //Lesson11Example();
+        //Lesson10Example();
         //Lesson9Examples();
+        //Lesson8Examples2();
         //Lesson8Examples();
         //beerSong();
         //Lab2Example();
@@ -21,13 +23,36 @@ public class Main {
         //houseExample();
     } // end main method
 
+    public static void TruckLab(){
+        Truck myTruck = new Truck();
+        myTruck.moveDrive();
+        //myTruck.setwheelType();
+        //myTruck.setwindowType();
+        //myTruck.setbodyColor();
+        //myTruck.setboxbedSize();
+        myTruck.getwheelType();
+        myTruck.getwindowType();
+        myTruck.getbodyColor();
+        myTruck.getboxbedSize();
+
+    }
+
+    public static void Lesson11Example(){
+        House house1 = new House();
+
+        House house2 = new House("Creamy Peach");
+
+    }
+
     public static void Lesson10Example(){
         // Try to see a private method in another class.
+        Lesson6 myLesson6 = new Lesson6(); // An object instance of this class
+        //myLesson6.examplePrivate(); // cannot access
         BottlesOfBeerSong song = new BottlesOfBeerSong();
         //song.lesson10Private(); // cannot access
-       Lesson10 myLesson = new Lesson10();
-       //myLesson.showLesson();  // cannot access
-        // myLesson.showProtected(); //cannot access
+        Lesson10 myLesson = new Lesson10();
+        //myLesson.showLesson();  // cannot access
+        //myLesson.showProtected(); // cannot access
     }
 
     public static void Lesson9Examples() {
@@ -49,13 +74,13 @@ public class Main {
 
     /*public static void Lesson8Examples() {
         Lesson8 myLesson8 = new Lesson8();
-        myLesson8.basicIfExample(2, 4);
-        myLesson8.basicIfElseExample(3, 6);
-        myLesson8.basicIfElseChainExample(12);
-        myLesson8.basicIfAndOrExample(30);
-        myLesson8.basicSwitchExample(3);
-    }
-        public static void Lesson8Examples2() {
+        myLesson8.basicIfExample(2, 2);
+        myLesson8.basicIfElseExample(6, 6);
+        myLesson8.basicIfElseChainExample(31);
+        myLesson8.basicIfAndOrExample(83);
+        myLesson8.basicSwitchExample(7);
+    }*/
+        /*public static void Lesson8Examples2() {
         myLesson8.basicWhileExample();
         myLesson8.basicDoWhileExample();
         myLesson8.basicForLoopExample();
