@@ -10,7 +10,7 @@ public class House {
     private String doorColor;
 
     public House() {
-        System.out.println("This is the default contstructor");
+        System.out.println("This is the default constructor");
     }
     // Overloaded constructor (House + doorOpenClose
     public House(String doorColor) {
@@ -19,9 +19,9 @@ public class House {
     }
 
     public House(String doorColor, int windowSize, String foundation, String roofType){
-        this.doorColor = doorColor;
-        this.windowSize = windowSize;
-        this.foundation = foundation;
+        this.setDoorColor(doorColor);
+        this.setWindowSize(windowSize);
+        this.setFoundation(foundation);
         this.roofType = roofType;
     }
 
@@ -38,6 +38,33 @@ public class House {
         System.out.println("Open my door");
     }
 
+    public void doorOpenClose(String message){
+        System.out.println(message);
+    }
 
 
+
+    public int getWindowSize() {
+        return windowSize;
+    }
+
+    public void setWindowSize(int windowSize) {
+        this.windowSize = windowSize;
+    }
+
+    public String getFoundation() {
+        return foundation;
+    }
+
+    public void setFoundation(String foundation) {
+        this.foundation = foundation;
+    }
+
+    public String getDoorColor() {
+        return doorColor;
+    }
+
+    public void setDoorColor(String doorColor) {
+        this.doorColor = doorColor;
+    }
 }

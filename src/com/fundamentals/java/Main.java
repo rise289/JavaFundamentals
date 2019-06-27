@@ -1,4 +1,5 @@
 package com.fundamentals.java;
+
 import com.fundamentals.lesson10.Lesson10;
 /*
 This class is the starting class of this project.
@@ -6,8 +7,11 @@ This class is the starting class of this project.
         */
 public class Main {
 
+    // List of methods
     public static void main(String[] args) {
-        TruckLab();
+        //suvExample();
+        lesson12Example();
+        //truckExample();
         //Lesson11Example();
         //Lesson10Example();
         //Lesson9Examples();
@@ -23,19 +27,33 @@ public class Main {
         //houseExample();
     } // end main method
 
-    public static void TruckLab(){
-        Truck myTruck = new Truck();
-        myTruck.moveDrive();
-        //myTruck.setwheelType();
-        //myTruck.setwindowType();
-        //myTruck.setbodyColor();
-        //myTruck.setboxbedSize();
-        myTruck.getwheelType();
-        myTruck.getwindowType();
-        myTruck.getbodyColor();
-        myTruck.getboxbedSize();
+
+    public static void suvExample() {
+        SUV mySUV = new SUV();
+        mySUV.driving();
+    }
+
+
+    public static void lesson12Example(){
+        Condo myCondo = new Condo();
+        myCondo.doorOpenClose();
+        Condo mySecondCondo = new Condo("railing","orange",32,"composite", "steel");
+        System.out.println((mySecondCondo.getDoorColor()));
+    }
+
+    public static void truckExample() {
+        TruckExample myTruckExample = new TruckExample("Chrome","Tinted", "Short", "Hunter Green" );
+        myTruckExample.setColor("candy cane");
+        myTruckExample.setBoxBed("long");
+        System.out.println(myTruckExample.getWheels());
+        System.out.println(myTruckExample.getWindow());
+        System.out.println(myTruckExample.getBoxBed());
+        System.out.println(myTruckExample.getColor());
+
+
 
     }
+
 
     public static void Lesson11Example(){
         House house1 = new House();
