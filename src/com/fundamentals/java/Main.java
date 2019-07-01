@@ -7,16 +7,32 @@ This class is the starting class of this project.
         */
 public class Main {
 
+    public static int num = 0;
+
+    static {
+        System.out.println("Static block 1");
+        num = 42;
+    }// end static block
+
+     static {
+         System.out.println("Static Block 2");
+         num = 62;
+        }//end static block
+
+
     // List of methods
     public static void main(String[] args) {
+        lesson15Example();
+        //lesson14Examples();
+        //lab3Examples();
         //suvExample();
-        lesson12Example();
+        //lesson12Example();
         //truckExample();
         //Lesson11Example();
         //Lesson10Example();
         //Lesson9Examples();
         //Lesson8Examples2();
-        //Lesson8Examples();
+        //lesson8Examples();
         //beerSong();
         //Lab2Example();
         //GreenBookExamples();
@@ -27,6 +43,44 @@ public class Main {
         //houseExample();
     } // end main method
 
+    //Can't create and object of an abstract class?  No, but you can create an object instance using a child.
+
+    //Object instance of BlackBerry
+    public static void lesson15Example(){
+        int[] myKeys = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        BlackBerry myBlackBerry = new BlackBerry(25, myKeys, 0,"Color Screen");
+        myBlackBerry.receiveCall(); //obj instance of blackberry
+        AbstractCellPhone myOldPhone = new BlackBerry(30, myKeys, 1, "Monochrome");
+        myOldPhone.receiveCall(); // obj instance from the child to the parent
+        myOldPhone.endCall();
+    }//end method
+
+    public static void lesson14Examples() {
+        //Lesson14.MY_FIRST_FINAL = 10;
+        // Can not change the value of the final.
+        // Multiple ways to run Static methods
+        //1
+        int total = Lesson14.MY_FIRST_FINAL * 35;
+        System.out.println(total);
+
+        // Can change the value of a non-final static
+        //2
+        Lesson14.myFirstStatic = 98; // original is 35
+        System.out.println(Lesson14.myFirstStatic);
+        //3
+        Lesson14.myFirstStaticMethod(10);
+
+        System.out.println("Block number was " + num);
+        Lesson14.MyInnerClass test = new Lesson14.MyInnerClass();
+        test.myInnerMethod();
+    }
+
+
+   /* public static void lab3Examples() {
+        Lab3 myLab3 = new Lab3();
+        //myLab3.switchLab3();
+        myLab3.basicDoWhileLab3();
+    }*/
 
     public static void suvExample() {
         SUV mySUV = new SUV();
@@ -39,6 +93,9 @@ public class Main {
         myCondo.doorOpenClose();
         Condo mySecondCondo = new Condo("railing","orange",32,"composite", "steel");
         System.out.println((mySecondCondo.getDoorColor()));
+
+        House myHouse = new Condo();
+        myHouse.doorOpenClose();
     }
 
     public static void truckExample() {
@@ -85,24 +142,22 @@ public class Main {
     public static void beerSong(){
         BottlesOfBeerSong song = new BottlesOfBeerSong();
         song.timeToSing();
-
     }
 
-
-
-    /*public static void Lesson8Examples() {
+   public static void lesson8Examples() {
         Lesson8 myLesson8 = new Lesson8();
         myLesson8.basicIfExample(2, 2);
         myLesson8.basicIfElseExample(6, 6);
         myLesson8.basicIfElseChainExample(31);
         myLesson8.basicIfAndOrExample(83);
         myLesson8.basicSwitchExample(7);
-    }*/
-        /*public static void Lesson8Examples2() {
-        myLesson8.basicWhileExample();
-        myLesson8.basicDoWhileExample();
-        myLesson8.basicForLoopExample();
-        myLesson8.basicBranchingExample();
+    }
+        public static void Lesson8Examples2() {
+        Lesson8 myOtherLesson8 = new Lesson8();
+        myOtherLesson8.basicWhileExample();
+        myOtherLesson8.basicDoWhileExample();
+        myOtherLesson8.basicForLoopExample();
+        myOtherLesson8.basicBranchingExample();
         }
 
        public static void Lesson7Examples () {

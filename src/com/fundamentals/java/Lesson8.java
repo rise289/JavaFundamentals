@@ -1,7 +1,7 @@
 package com.fundamentals.java;
 
 /*
-    The contents of this clas is to go over Lesson 8 content
+    The contents of this class is to go over Lesson 8 content
     Control Flow Statements
   */
 public class Lesson8 {
