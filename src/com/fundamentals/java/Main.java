@@ -22,7 +22,9 @@ public class Main {
 
     // List of methods
     public static void main(String[] args) {
-        lesson15Example();
+        lesson17Example();
+        //lesson16Examples();
+        //lesson15Example();
         //lesson14Examples();
         //lab3Examples();
         //suvExample();
@@ -42,6 +44,27 @@ public class Main {
         //Lesson5Examples();
         //houseExample();
     } // end main method
+
+
+    public static void lesson17Example(){
+        Lesson17 myLesson17 = new Lesson17();
+        //myLesson17.exampleArrayList1();
+        //myLesson17.exampleArrayList2();
+        //myLesson17.exampleHashSet();
+        myLesson17.exampleHashMap();
+
+    }
+    public static void lesson16Examples() {
+        Lesson16 myLesson16 = new Lesson16();
+        myLesson16.showEnum();
+        myLesson16.myFavoriteFlavor(Lesson16.IceCreamFlavors.PEACH);
+
+        DaysOfTheWeek d1[] = DaysOfTheWeek.values();
+        for(DaysOfTheWeek day: d1) {
+           System.out.println(day +" at index" +day.ordinal());
+        }
+
+    }
 
     //Can't create and object of an abstract class?  No, but you can create an object instance using a child.
 

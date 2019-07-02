@@ -2,23 +2,21 @@ package com.fundamentals.java;
 
 /*public class Lab3 {
 
-    public void basicSwitchExample(String Grade) {
-        //switch(Grade = ) {
-            case 1:
-                System.out.println("Excellent");
-                break;
-            case 2:
-                System.out.println("Very Good");
-                break;
-            case 3:
-                System.out.println("Good");
-                break;
-            case 4:
-                System.out.println("Average");
-                break;
+    public String showGrade(char grade) {
+        switch(grade) {
+            case 'E':
+                return "Excellent";
+            case 'V':
+                return "Very Good";
+            case 'G':
+                return "Good";
+            case 'A':
+                return "Average";
+            case 'F':
+                return "Failed";
             default:
-                System.out.println("Average");
-                break;
+                ("Not a valid grade.");
+// Can apply enum here without a default; forcing a choice to be made.
         }
     } // end method
 */
