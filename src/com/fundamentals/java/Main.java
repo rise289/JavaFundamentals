@@ -22,7 +22,8 @@ public class Main {
 
     // List of methods
     public static void main(String[] args) {
-        lesson17Example();
+        lesson18Example();
+        //lesson17Example();
         //lesson16Examples();
         //lesson15Example();
         //lesson14Examples();
@@ -44,6 +45,13 @@ public class Main {
         //Lesson5Examples();
         //houseExample();
     } // end main method
+
+
+    public static void lesson18Example() {
+        Lesson18 myLesson18 = new Lesson18(); //an obj of Lesson18
+        myLesson18.exampleException();
+        myLesson18.myArrayException();
+    }
 
 
     public static void lesson17Example(){
